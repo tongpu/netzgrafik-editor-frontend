@@ -97,6 +97,14 @@
                 }
               ]
             },
+            "auth0": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.auth0.ts"
+                }
+              ]
+            },
             "local": {
               "fileReplacements": [
                 {
@@ -122,6 +130,9 @@
             },
             "local": {
               "buildTarget": "netzgrafik-frontend:build:local"
+            },
+            "auth0": {
+              "buildTarget": "netzgrafik-frontend:build:auth0"
             },
             "es5": {
               "buildTarget": "netzgrafik-frontend:build:es5"
